@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AI Safety Incident Tracker</string>
+    <string name="title_hint">Incident Title</string>
+    <string name="description_hint">Detailed description of the incident</string>
+    <string name="severity_label">Severity Level</string>
+    <string name="save_button">Save Incident</string>
+    <string name="description_label">Description</string>
+
+    <string-array name="severity_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Critical</item>
+    </string-array>
+</resources>
