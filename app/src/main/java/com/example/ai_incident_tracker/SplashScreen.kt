@@ -16,7 +16,7 @@ class SplashScreen : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, IncidentListActivity::class.java))
+            startActivity(Intent(this, SignIn::class.java))
             finish()
         }, 2000)
     }

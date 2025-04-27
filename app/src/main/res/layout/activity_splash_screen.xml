@@ -8,7 +8,7 @@
     tools:context=".SplashScreen"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/colorPrim">
+    android:background="@drawable/report_background">
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
@@ -22,10 +22,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/akaya_telivigala"
         android:text="AI Safety Incidents"
+        android:textColor="@color/white"
         android:textSize="30sp" />
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:indeterminateTint="@color/white" />
+
+    />
 </LinearLayout>

@@ -28,13 +28,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="6dp"
-
+            android:foregroundGravity="center"
 
             android:clickable="true"
             android:rotation="0"
             android:rotationX="0"
             android:rotationY="0"
             app:chipSpacing="8dp"
+            android:paddingLeft="8dp"
             app:singleSelection="true"
             tools:visibility="visible" />
     </com.google.android.material.appbar.AppBarLayout>

@@ -1,7 +1,10 @@
 package com.example.ai_incident_tracker.ui.incidentlist
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +28,7 @@ class IncidentListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_incident_list)
         setSupportActionBar(findViewById(R.id.toolbar))
+
         supportActionBar?.title = "AI Safety Incidents"
         recyclerView = findViewById(R.id.incident_recycler_view)
         filterChipGroup = findViewById(R.id.filter_chip_group)
@@ -33,6 +37,10 @@ class IncidentListActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         setupFilterChips()
         loadIncidents()
+        val sharedPref = getSharedPreferences("My Details", Context.MODE_PRIVATE)
+        val name = sharedPref.getString("name", "")
+        showCustomToast("Welcome to the AI Safety Incident Dashboard, $name!")
+
         findViewById<FloatingActionButton>(R.id.fab_add_incident).setOnClickListener {
             startActivity(Intent(this, ReportIncidentActivity::class.java))
         }
@@ -72,4 +80,18 @@ class IncidentListActivity : AppCompatActivity() {
         super.onResume()
         loadIncidents()
     }
+    private fun showCustomToast(message: String) {
+        val inflater = layoutInflater
+        val layout = inflater.inflate(R.layout.custom_toast, findViewById(R.id.toastContainer))
+
+        val toastMessage: TextView = layout.findViewById(R.id.toastMessage)
+        toastMessage.text = message
+
+        val customToast = Toast(applicationContext)
+        customToast.duration = Toast.LENGTH_LONG
+        customToast.view = layout
+        customToast.setGravity(android.view.Gravity.CENTER, 0, 0)
+        customToast.show()
+    }
+
 }

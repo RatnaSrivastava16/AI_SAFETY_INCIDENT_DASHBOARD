@@ -14,10 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Launch the IncidentListActivity immediately
         startActivity(Intent(this, IncidentListActivity::class.java))
 
-        // Finish this activity so it's removed from the back stack
         finish()
     }
 }

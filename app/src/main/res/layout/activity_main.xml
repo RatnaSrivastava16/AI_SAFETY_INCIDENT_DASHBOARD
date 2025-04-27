@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- This layout is intentionally simple since we're immediately redirecting -->
-    <!-- You could add a splash screen here if desired -->
+
 
 </LinearLayout>
