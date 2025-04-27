@@ -57,4 +57,9 @@ The app empowers users to **view**, **filter**, **add**, and **report** AI safet
 
 ---
 
-# 🌟 Stay ahead, stay aware — because a safer AI-driven world begins with informed actions! 🚀
+## 📬 Contact
+If you have any queries or feedback, feel free to reach out!
+
+---
+
+# 🎉 Thank you for checking out AI Safety Incident Tracker!
