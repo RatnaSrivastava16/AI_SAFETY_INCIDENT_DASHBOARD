@@ -1,29 +1,30 @@
-# AI Safety Incident Tracker - Android App
+# 🚀 AI Safety Incident Tracker - Android App
 
-## Overview
-This is a simple **Android (Kotlin)** app built for the SPARKLEHOOD assessment.  
-The app allows users to **view**, **filter**, **add**, and **report** hypothetical AI safety incidents, focusing on user interaction, state management, and clean UI.
+## 📝 Overview
+**AI Safety Incident Tracker** is a clean and simple **Android (Kotlin)** application developed for the **SPARKLEHOOD Assessment**.  
+The app empowers users to **view**, **filter**, **add**, and **report** AI safety incidents with a focus on **intuitive interaction**, **state management**, and a **polished UI**.
 
-It also includes:
-- A **Splash Screen** on app start.
-- **Signup/Login** flow using **SharedPreferences** to manage simple user sessions.
-
----
-
-## Features
-- 🔥 Splash screen with smooth transition to login/signup.
-- 🧑 User Signup/Login (SharedPreferences for local session management).
-- 📜 Scrollable list of AI Safety Incidents (RecyclerView + CardView).
-- 🔎 Filter incidents based on **Severity** (using Spinner).
-- 📄 Detailed view of each Incident with Title, Severity, Date, and Description.
-- ➕ "Report Incident" screen with form input for Title, Description, and Severity selection.
-- ✅ New incident saves locally and updates the list immediately.
-- 📅 Reported Date is automatically generated using the current time.
-- 🖌️ Clean, standard Android layouts and styling.
+✨ Bonus features:
+- Elegant **Splash Screen** for a smooth start.
+- **Signup/Login** system using **SharedPreferences** for session handling.
 
 ---
 
-## Tech Stack
+## 🌟 Features
+
+- 🚀 **Splash Screen** with seamless transition to authentication.
+- 🔐 **User Authentication**: Signup and Login (locally managed via SharedPreferences).
+- 📜 **Incident Feed**: Scrollable list with **RecyclerView** and stylish **CardView** layouts.
+- 🎯 **Filter by Severity**: Quickly filter incidents using a **Spinner** dropdown.
+- 📄 **Detailed View**: View complete incident details — Title, Severity, Date, Description.
+- ➕ **Report New Incident**: Add incidents easily via a simple form (with Severity selection).
+- 🕒 **Auto-generated Report Date**: Current date-time auto-filled on incident creation.
+- 🧹 **Modern & Clean UI**: Built with Material Design principles.
+
+---
+
+## ⚙️ Tech Stack
+
 - Kotlin
 - Android SDK
 - SharedPreferences (for authentication)
@@ -33,19 +34,26 @@ It also includes:
 
 ---
 
-## How to Build & Run Locally
+## 🛠️ How to Build & Run Locally
 
 1. **Clone the Repository**
+   ```bash
    git clone https://github.com/your-username/ai-safety-incident-tracker.git
-   
-3. **Open in Android Studio**
-   Open Android Studio
 
-   Click on Open Project and select the cloned folder.
+## 📸 App Screenshots
 
-4. **Build & Run**
+<p align="center">
+  <img src="screenshots/img1.jpeg" alt="Splash Screen" width="250" />
+  <img src="screenshots/img2.jpeg" alt="Login Screen" width="250" />
+  <img src="screenshots/img3.jpeg" alt="Incident List" width="250" />
+</p>
+<p align="center">
+  <img src="screenshots/img4.jpeg" alt="Incident Filter" width="250" />
+  <img src="screenshots/img5.jpeg" alt="Incident Tracker" width="250" />
+  <img src="screenshots/img6.jpeg" alt="Report Incident" width="250" />
+</p>
 
-   Connect an Android device or use an emulator.
+## 📬 Contact
+If you have any queries or feedback, feel free to reach out!
 
-   Click on the Run button (green arrow) in Android Studio.
-
+# 🎉 Thank you for checking out AI Safety Incident Tracker!
