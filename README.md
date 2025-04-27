@@ -1,7 +1,7 @@
 # AI Safety Incident Tracker - Android App
 
 ## Overview
-This is a simple **Android (Kotlin)** app built for the HumanChain assessment.  
+This is a simple **Android (Kotlin)** app built for the SPARKLEHOOD assessment.  
 The app allows users to **view**, **filter**, **add**, and **report** hypothetical AI safety incidents, focusing on user interaction, state management, and clean UI.
 
 It also includes:
